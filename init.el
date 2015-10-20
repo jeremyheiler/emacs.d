@@ -46,3 +46,12 @@
 
 ;; idk what this does; i don't remember putting it here
 (put 'narrow-to-region 'disabled nil)
+
+;; eshell
+(defun eshell-mode-hook-func ()
+  (setq eshell-path-env (concat "/Users/jeremy/bin:" eshell-path-env))
+  (setenv "PATH" (concat "/usr/local/bin:" (getenv "PATH")))
+  ;;(define-key eshell-mode-map (kbd "M-s") 'other-window-or-split)
+  )
+
+(add-hook 'eshell-mode-hook 'eshell-mode-hook-func)
