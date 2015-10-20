@@ -1,0 +1,11 @@
+(add-hook 'clojure-mode-hook #'enable-paredit-mode)
+(add-hook 'cider-mode-hook 'cider-turn-on-eldoc-mode)
+(add-hook 'cider-mode-hook 'company-mode)
+(add-hook 'cider-repl-mode-hook 'company-mode)
+(add-hook 'cider-repl-mode-hook 'paredit-mode)
+
+(add-to-list 'auto-mode-alist '("\\.boot$" . clojure-mode))
+(add-to-list 'auto-mode-alist '("\\.cljc$" . clojure-mode))
+(add-to-list 'auto-mode-alist '("\\.cljs$" . clojure-mode))
+(add-to-list 'auto-mode-alist '("\\.cljx$" . clojure-mode))
+(add-to-list 'auto-mode-alist '("\\.edn$" . clojure-mode))
