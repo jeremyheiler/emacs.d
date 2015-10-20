@@ -31,6 +31,7 @@
 (load "~/.emacs.d/go.el")
 (load "~/.emacs.d/lisp.el")
 (load "~/.emacs.d/postgres.el")
+(load "~/.emacs.d/racket.el")
 
 (add-hook 'emacs-lisp-mode-hook #'enable-paredit-mode)
 
