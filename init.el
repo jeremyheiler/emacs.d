@@ -31,7 +31,7 @@
      (define-key paredit-mode-map (kbd "M-}") 'paredit-backward-barf-sexp)))
 
 (load "~/.emacs.d/clojure.el")
-(load "~/.emacs.d/go.el")
+;;(load "~/.emacs.d/go.el")
 (load "~/.emacs.d/lisp.el")
 (load "~/.emacs.d/postgres.el")
 (load "~/.emacs.d/racket.el")
