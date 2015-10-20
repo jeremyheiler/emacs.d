@@ -16,7 +16,9 @@
     paredit
     go-mode
     slime
-    yaml-mode))
+    yaml-mode
+    color-theme-sanityinc-solarized
+    color-theme-sanityinc-tomorrow))
 
 (dolist (p jh-packages)
   (when (not (package-installed-p p))
