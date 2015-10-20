@@ -6,7 +6,7 @@
 (load-theme 'sanityinc-tomorrow-eighties t)
 ;;(load-theme 'sanityinc-solarized-dark t)
 
-(set-face-attribute 'default nil :height 100)
+;;(set-face-attribute 'default nil :height 100)
 
 (add-to-list 'load-path "~/.emacs.d/better-defaults")
 (require 'better-defaults)
