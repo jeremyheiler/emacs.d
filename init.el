@@ -2,8 +2,10 @@
 (require 'package)
 (package-initialize)
 
-;;(load-theme 'wombat t)
-(load-theme 'sanityinc-tomorrow-eighties t)
+(load-theme 'warm-night t)
+;;(load-theme 'whiteboard t)
+;;(load-theme 'sanityinc-tomorrow-night t)
+;;(load-theme 'sanityinc-tomorrow-eighties t)
 ;;(load-theme 'sanityinc-solarized-dark t)
 
 ;;(set-face-attribute 'default nil :height 100)
@@ -33,8 +35,11 @@
 (load "~/.emacs.d/clojure.el")
 ;;(load "~/.emacs.d/go.el")
 (load "~/.emacs.d/lisp.el")
+(load "~/.emacs.d/pony.el")
 (load "~/.emacs.d/postgres.el")
 (load "~/.emacs.d/racket.el")
+(load "~/.emacs.d/java.el")
+(load "~/.emacs.d/javascript.el")
 
 (add-hook 'emacs-lisp-mode-hook #'enable-paredit-mode)
 
@@ -55,3 +60,17 @@
   )
 
 (add-hook 'eshell-mode-hook 'eshell-mode-hook-func)
+
+(setenv "PATH" (concat (getenv "PATH") ":~/bin"))
+(setq exec-path (append exec-path '("~/bin")))
+
+;;; org mode
+
+(setq org-log-done 'time)
+;;(setq org-startup-indented t)
+(setq org-startup-folded nil)
+
+;; fill mode
+
+(setq sentence-end-double-space nil)
+(setq paragraph-start "\f\\|[ \t]*$\\|[ \t]*[-+*] ")
