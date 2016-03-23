@@ -2,7 +2,7 @@
 (require 'package)
 (package-initialize)
 
-(load-theme 'warm-night t)
+;;(load-theme 'warm-night t)
 ;;(load-theme 'whiteboard t)
 ;;(load-theme 'sanityinc-tomorrow-night t)
 ;;(load-theme 'sanityinc-tomorrow-eighties t)
