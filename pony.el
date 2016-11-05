@@ -1,4 +1,4 @@
-(add-to-list 'load-path "~/.emacs.d/ponylang-mode")
+(add-to-list 'load-path "~/.emacs.d/packages/ponylang-mode")
 
 (require 'ponylang-mode)
 

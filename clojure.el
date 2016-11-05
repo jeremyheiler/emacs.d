@@ -1,11 +1,41 @@
+(add-to-list 'load-path "~/.emacs.d/packages/cider")
+
+(require 'clojure-mode)
+(require 'cider)
+
 (add-hook 'clojure-mode-hook #'enable-paredit-mode)
+
 (add-hook 'cider-mode-hook 'cider-turn-on-eldoc-mode)
 (add-hook 'cider-mode-hook 'company-mode)
+
 (add-hook 'cider-repl-mode-hook 'company-mode)
 (add-hook 'cider-repl-mode-hook 'paredit-mode)
 
 (add-to-list 'auto-mode-alist '("\\.boot$" . clojure-mode))
 (add-to-list 'auto-mode-alist '("\\.cljc$" . clojure-mode))
-(add-to-list 'auto-mode-alist '("\\.cljs$" . clojure-mode))
+(add-to-list 'auto-mode-alist '("\\.cljs$" . clojurescript-mode))
 (add-to-list 'auto-mode-alist '("\\.cljx$" . clojure-mode))
 (add-to-list 'auto-mode-alist '("\\.edn$" . clojure-mode))
+
+(define-clojure-indent
+  (defroutes 'defun)
+  (defroutes 'defun)
+  (for-all   'defun)
+  (fact      'defun)
+  (facts     'defun)
+  (future-fact 'defun)
+  (future-facts 'defun)
+  (GET 2)
+  (POST 2)
+  (PUT 2)
+  (DELETE 2)
+  (HEAD 2)
+  (ANY 2)
+  (Given 2)
+  (When  2)
+  (Then  2)
+  (context 2)
+  (describe 'defun)
+  (context 'defun)
+  (it 2)
+  (should 2))
