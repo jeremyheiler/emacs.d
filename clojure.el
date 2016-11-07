@@ -1,15 +1,15 @@
-(add-to-list 'load-path "~/.emacs.d/packages/cider")
-
 (require 'clojure-mode)
 (require 'cider)
 
+(setq cider-repl-display-help-banner nil)
+
 (add-hook 'clojure-mode-hook #'enable-paredit-mode)
 
-(add-hook 'cider-mode-hook 'cider-turn-on-eldoc-mode)
-(add-hook 'cider-mode-hook 'company-mode)
+(add-hook 'cider-mode-hook #'eldoc-mode)
+(add-hook 'cider-mode-hook #'company-mode)
 
-(add-hook 'cider-repl-mode-hook 'company-mode)
-(add-hook 'cider-repl-mode-hook 'paredit-mode)
+(add-hook 'cider-repl-mode-hook #'company-mode)
+(add-hook 'cider-repl-mode-hook #'enable-paredit-mode)
 
 (add-to-list 'auto-mode-alist '("\\.boot$" . clojure-mode))
 (add-to-list 'auto-mode-alist '("\\.cljc$" . clojure-mode))
