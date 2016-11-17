@@ -5,8 +5,8 @@
 (add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/") t)
 (add-to-list 'package-archives '("melpa-stable" . "http://stable.melpa.org/packages/") t)
 
-(setq package-pinned-packages '((cider . "melpa-stable")))
-(setq package-pinned-packages '((clj-refactor . "melpa-stable")))
+(setq package-pinned-packages '((cider . "melpa-stable")
+                                (clj-refactor . "melpa-stable")))
 
 (package-initialize)
 (package-refresh-contents)
