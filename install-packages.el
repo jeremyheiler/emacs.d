@@ -15,21 +15,27 @@
   '(;;avy
     better-defaults
     cider
-    ;;clj-refactor
+    clj-refactor
     clojure-mode
-    ;;haskell-mode
-    racket-mode
-    company
-    paredit
-    ;;go-mode
-    ;;ponylang-mode
-    ;;slime
-    ;;yaml-mode
-    markdown-mode
     ;;color-theme-sanityinc-solarized
     ;;color-theme-sanityinc-tomorrow
+    company
+    ;;erlang
+    git-gutter
+    go-mode
+    gruvbox-theme
+    ;;haskell-mode
+    helm
+    magit
+    markdown-mode
+    paredit
+    ;;ponylang-mode
+    python-mode
+    racket-mode
+    ;;slime
+    sublime-themes
     ;;warm-night-theme
-    sublime-themes))
+    yaml-mode))
 
 (dolist (p jh-packages)
   (when (not (package-installed-p p))

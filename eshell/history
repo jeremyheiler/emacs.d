@@ -1,0 +1,8 @@
+ls
+cd ../../server/
+ls
+cd server/
+ls
+cd dev
+ls
+cp ../../backend-migrations/add_to_beta.clj add_mailgun_webhook.clj
