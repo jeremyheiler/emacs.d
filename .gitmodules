@@ -1,3 +1,0 @@
-[submodule "packages/ponylang-mode"]
-	path = packages/ponylang-mode
-	url = git@github.com:seantallen/ponylang-mode.git

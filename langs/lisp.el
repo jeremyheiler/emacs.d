@@ -1,5 +1,5 @@
-(setq inferior-lisp-program "/usr/bin/sbcl")
-;;(setq inferior-lisp-program "/usr/local/bin/sbcl")
+;;(setq inferior-lisp-program "/usr/bin/sbcl")
+(setq inferior-lisp-program "/usr/local/bin/sbcl")
 (setq slime-contribs '(slime-fancy))
 
 (defun override-slime-repl-bindings-with-paredit ()
